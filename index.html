@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WW2 Storyboard Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>D-Day Invasion - June 6, 1944</h1>
+    </header>
+
+    <section id="scene1">
+        <h2>Scene 1: The Landing</h2>
+        <p>You’re aboard a landing craft, packed shoulder-to-shoulder with fellow soldiers. The shoreline of Omaha Beach looms ahead, dotted with enemy fortifications. As the ramp drops, chaos erupts.</p>
+
+        <div class="choices">
+            <button onclick="showOutcome('cover')">Run towards the nearest cover.</button>
+            <button onclick="showOutcome('tank')">Follow the tank for protection.</button>
+            <button onclick="showOutcome('wait')">Lay low and wait for reinforcements.</button>
+        </div>
+
+        <div id="outcome-cover" class="outcome">
+            <p>Outcome: You dive behind a steel hedgehog, catching your breath as bullets whiz by.</p>
+            <img src="images/cover.jpg" alt="Soldiers diving behind steel obstacles on a chaotic beach, with explosions in the background.">
+        </div>
+
+        <div id="outcome-tank" class="outcome">
+            <p>Outcome: The tank shields you, but becomes a target. You must decide to stay or break away.</p>
+            <img src="images/tank.jpg" alt="A Sherman tank advancing, with soldiers huddled close and enemy fire impacting nearby.">
+        </div>
+
+        <div id="outcome-wait" class="outcome">
+            <p>Outcome: Waiting spares you from immediate danger, but you’re eventually forced to move as the situation intensifies.</p>
+            <img src="images/wait.jpg" alt="A soldier lying flat on the sand, surrounded by the chaos of battle.">
+        </div>
+    </section>
+
+    <nav>
+        <a href="#scene2">Next Scene: Securing the Beachhead</a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<img src="images/cover.jpg" alt="Soldiers diving behind steel obstacles on a chaotic beach, with explosions in the background.">
+<img src="images/tank.jpg" alt="A Sherman tank advancing, with soldiers huddled close and enemy fire impacting nearby.">
+<img src="images/wait.jpg" alt="A soldier lying flat on the sand, surrounded by the chaos of battle.">
